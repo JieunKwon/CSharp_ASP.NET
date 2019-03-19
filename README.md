@@ -11,7 +11,7 @@ ASP.NET Web Forms
   - configuration information for the page 
   - instructions for how to process the page 
 
- <%@ Page Title="Welcome" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ProjectName._Default" %>
+        <%@ Page Title="Welcome" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="ProjectName._Default" %>
 
 
 Web Server Controls
@@ -23,4 +23,4 @@ Web server controls are similar to HTML buttons and input elements. However, the
  - runat="server" attribute 
  - ID attribute for reference
  
- 
+        <asp:Image  ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg" BorderStyle="None" />
