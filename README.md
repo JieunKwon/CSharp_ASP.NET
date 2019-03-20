@@ -24,3 +24,13 @@ Web server controls are similar to HTML buttons and input elements. However, the
  - ID attribute for reference
  
         <asp:Image  ID="Image1" runat="server" ImageUrl="~/Images/logo.jpg" BorderStyle="None" />
+
+Master Page
+-------
+
+A single master page(Site.Master) defines the look and feel and standard behavior for all of the pages
+
+    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WingtipToys.SiteMaster" %>
+
+
+ 
