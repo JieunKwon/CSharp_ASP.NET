@@ -31,9 +31,16 @@ Master Page
 A single master page defines the look and feel and standard behavior for all of the pages
 
     (Site.Master)
-    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="WingtipToys.SiteMaster" %>
+    <%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Project.SiteMaster" %>
 
 
-To add new page based on master page, select the option of Web Form with Master Page from
+To add new page based on master page, select the option of 'Web Form with Master Page' 
+
+    <%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="MyPage.aspx.cs" Inherits="Project.MyPage" %>
+    
+    <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server"> <!-- Content Part --> </asp:Content>
+
+
+
 
  
