@@ -74,11 +74,34 @@ To add new page based on master page, select the option of 'Web Form with Master
     <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server"> <!-- Content Part --> </asp:Content>
 
 
-web.config – <appSettings>
---------
-  Used to store application – settings in the form of key value pairs
+web.config -appSettings 
+------------------
+
+Used to store application – settings in the form of key value pairs 
+
 Inside the <appSettings> use the <add> tag with two attributes
+
 -key: stores the key used to access the setting
+
 -value: stores the value associated with the key
+
 In code use the WebConfigurationManager.AppSettings property like a dictionary
   
+
+Application File: global.asax
+---------
+
+Contains application level event handlers, global directives and global object tags
+
+Used to perform application initialization, cleanup, logging, profiling and troubleshooting
+
+    <%@ Application Codebehind="Global.asax.cs" Inherits="WebArchitect.Gobal" Language="C#" %>
+    
+
+ < Global events > 
+ 
+-Application_Start / Application_End
+
+-Session_Start / Session_End
+
+-Application_Error: invoked whenever an unhandled exception occurs in the application
