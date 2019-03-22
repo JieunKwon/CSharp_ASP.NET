@@ -40,7 +40,3 @@ To add new page based on master page, select the option of 'Web Form with Master
     
     <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server"> <!-- Content Part --> </asp:Content>
 
-
-
-
- 
