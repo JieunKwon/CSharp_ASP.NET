@@ -3,9 +3,35 @@
 ASP.NET Web Forms
 -----------------
 
+Web Application Elements
+ A web application is made of
+ Web forms (*.aspx files)
+ Master pages (.master files)
+ Web Services (*.asmx files or *.svc files)
+ Code behind files (*.cs files for C#)
+ One or more Web.config the configuration of the application
+ Global.asax (global application elements)
+ Other components: custom controls, modules, handlers
+ Other static resources: HTML / CSS files, images, audio-video files etc
+
+
+ASP.NET Page
+---------
+
+ A file with extension *.aspx that resides on a web server and
+contains:
+ Processing instructions for the server
+ HTML
+ Web Form containing web controls
+ Managed code in any language supported by the .NET Framework
+ Client-side scripting
+ Rendered by the web server in HTML so it can be displayed in any
+browser
+
 
 @Page Directive
 -------
+Every ASP.NET page uses the @Page directive to specify
 
   - specification the page properties 
   - configuration information for the page 
