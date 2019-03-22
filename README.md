@@ -4,22 +4,29 @@ ASP.NET Web Forms
 -----------------
 
 Web Application Elements
- A web application is made of
+
  Web forms (*.aspx files)
+
  Master pages (.master files)
+
  Web Services (*.asmx files or *.svc files)
+
  Code behind files (*.cs files for C#)
+
  One or more Web.config the configuration of the application
+
  Global.asax (global application elements)
+
  Other components: custom controls, modules, handlers
+
  Other static resources: HTML / CSS files, images, audio-video files etc
 
 
 ASP.NET Page
 ---------
 
- A file with extension *.aspx that resides on a web server and
-contains:
+A file with extension *.aspx that resides on a web server and contains:
+
  Processing instructions for the server
  HTML
  Web Form containing web controls
@@ -66,3 +73,12 @@ To add new page based on master page, select the option of 'Web Form with Master
     
     <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server"> <!-- Content Part --> </asp:Content>
 
+
+web.config – <appSettings>
+--------
+  Used to store application – settings in the form of key value pairs
+Inside the <appSettings> use the <add> tag with two attributes
+-key: stores the key used to access the setting
+-value: stores the value associated with the key
+In code use the WebConfigurationManager.AppSettings property like a dictionary
+  
