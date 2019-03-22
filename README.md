@@ -102,6 +102,25 @@ In code use the WebConfigurationManager.AppSettings property like a dictionary
 
 - <system.web>: used to store web configuration sections
   
+< compilation settings > 
+
+- runtime settings
+
+- security and encryption settings
+
+- error handling
+
+- session state
+
+- page-level configuration settings
+
+- web control settings
+
+- web services settings
+
+- tracing configuration
+
+  
 Application File: global.asax
 ---------
 
