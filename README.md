@@ -28,12 +28,16 @@ ASP.NET Page
 A file with extension *.aspx that resides on a web server and contains:
 
  Processing instructions for the server
+
  HTML
+
  Web Form containing web controls
+
  Managed code in any language supported by the .NET Framework
+
  Client-side scripting
- Rendered by the web server in HTML so it can be displayed in any
-browser
+
+ Rendered by the web server in HTML so it can be displayed in any browser
 
 
 @Page Directive
@@ -77,6 +81,8 @@ To add new page based on master page, select the option of 'Web Form with Master
 web.config -appSettings 
 ------------------
 
+An XML file that defines the configuration information for the ASP.NET files in the same folder and any subfolder
+
 Used to store application – settings in the form of key value pairs 
 
 Inside the <appSettings> use the <add> tag with two attributes
@@ -87,7 +93,15 @@ Inside the <appSettings> use the <add> tag with two attributes
 
 In code use the WebConfigurationManager.AppSettings property like a dictionary
   
+ 
+< Three main sections > 
 
+- <appSettings>: used to store custom application settings
+
+- <connectionStrings>: used to store database connection strings
+
+- <system.web>: used to store web configuration sections
+  
 Application File: global.asax
 ---------
 
@@ -105,3 +119,5 @@ Used to perform application initialization, cleanup, logging, profiling and trou
 -Session_Start / Session_End
 
 -Application_Error: invoked whenever an unhandled exception occurs in the application
+
+
