@@ -101,6 +101,7 @@ In code use the WebConfigurationManager.AppSettings property like a dictionary
 - <connectionStrings>: used to store database connection strings
 
 - <system.web>: used to store web configuration sections
+
   
 < compilation settings > 
 
@@ -138,5 +139,8 @@ Used to perform application initialization, cleanup, logging, profiling and trou
 -Session_Start / Session_End
 
 -Application_Error: invoked whenever an unhandled exception occurs in the application
+
+
+
 
 
