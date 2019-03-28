@@ -127,6 +127,12 @@ In code use the WebConfigurationManager.AppSettings property like a dictionary
 Setting authorization rules in web.config
 -------
 
+Must set the web.config of website's root folder. 
+
+If need to set for the particular folder, need to set the Web.config into that folder, or can use Location option
+
+PUT all allows BEFORE ANY deny.
+
 - Allow access to everyone to a particular page
 
        <system.web>
@@ -164,6 +170,7 @@ Setting authorization rules in web.config
             <deny users="*"/> // deny everyone else
           </authorization>
         </system.web>
+
 
 Application File: global.asax
 ---------
