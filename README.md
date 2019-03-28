@@ -124,7 +124,26 @@ In code use the WebConfigurationManager.AppSettings property like a dictionary
 
 - tracing configuration
 
-  
+Setting authorization rules in web.config
+-------
+
+- Allow access to everyone to a particular page
+
+       <system.web>
+         <authorization>
+            <allow users="*"/> // this will allow access to everyone to register.aspx
+         </authorization>
+       </system.web>
+
+- Deny Anonymous user to access entire website
+
+      <system.web>
+         <authorization> 
+             <deny users="?"/>  //this will restrict anonymous user access
+         </authorization>
+      </system.web>
+      
+      
 Application File: global.asax
 ---------
 
