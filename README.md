@@ -1,27 +1,30 @@
 # CSharp_ASP.NET
 
-ASP.NET Web Forms
------------------
 
-Web Application Elements
+Web API with ASP.NET
+--------
 
- Web forms (*.aspx files)
+Create a web API project
 
- Master pages (.master files)
+Add a model class
 
- Web Services (*.asmx files or *.svc files)
+Create the database context
 
- Code behind files (*.cs files for C#)
+Register the database context
 
- One or more Web.config the configuration of the application
+Add a controller
 
- Global.asax (global application elements)
+Add CRUD methods
 
- Other components: custom controls, modules, handlers
+Configure routing and URL paths
 
- Other static resources: HTML / CSS files, images, audio-video files etc
+Specify return values
 
+Call the web API with Postman
 
+Call the web API with jQuery
+
+ 
 ASP.NET Page
 ---------
 
@@ -139,6 +142,29 @@ Used to perform application initialization, cleanup, logging, profiling and trou
 -Session_Start / Session_End
 
 -Application_Error: invoked whenever an unhandled exception occurs in the application
+
+
+ASP.NET Web Forms
+-----------------
+
+Web Application Elements
+
+ Web forms (*.aspx files)
+
+ Master pages (.master files)
+
+ Web Services (*.asmx files or *.svc files)
+
+ Code behind files (*.cs files for C#)
+
+ One or more Web.config the configuration of the application
+
+ Global.asax (global application elements)
+
+ Other components: custom controls, modules, handlers
+
+ Other static resources: HTML / CSS files, images, audio-video files etc
+
 
 
 
