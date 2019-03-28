@@ -143,7 +143,28 @@ Setting authorization rules in web.config
          </authorization>
       </system.web>
       
-      
+- Allow access to particular user only and deny everyone else
+
+       <location path="userpersonal.aspx">
+          <system.web>
+            <authorization>
+            <allow users="Julia, Jieun"/> // allow only  Julia and Jieun
+            <deny users="*"/>  // deny others
+            </authorization>
+          < /system.web>
+       </location>
+
+- Allow admin and deny users
+
+      <location path="AdminFolder">
+        <system.web> 
+          <authorization>
+            <allow roles="Admin"/> //Allows users in Admin role
+
+            <deny users="*"/> // deny everyone else
+          </authorization>
+        </system.web>
+
 Application File: global.asax
 ---------
 
