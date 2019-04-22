@@ -180,6 +180,7 @@ Contains application level event handlers, global directives and global object t
 
 Used to perform application initialization, cleanup, logging, profiling and troubleshooting
 
+    
     <%@ Application Codebehind="Global.asax.cs" Inherits="WebArchitect.Gobal" Language="C#" %>
     
 
@@ -191,6 +192,9 @@ Used to perform application initialization, cleanup, logging, profiling and trou
 
 -Application_Error: invoked whenever an unhandled exception occurs in the application
 
+-Applicatio_End
+
+-Session_End
 
 ASP.NET Web Forms
 -----------------
