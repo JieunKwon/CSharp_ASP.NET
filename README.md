@@ -196,6 +196,7 @@ Used to perform application initialization, cleanup, logging, profiling and trou
 
 -Session_End
 
+
 ASP.NET Web Forms
 -----------------
 
@@ -209,7 +210,7 @@ Web Application Elements
 
  Code behind files (*.cs files for C#)
 
- One or more Web.config the configuration of the application
+ One or more Web.config - the configuration of the application
 
  Global.asax (global application elements)
 
